@@ -32,7 +32,7 @@ int secondLargestE(int arr[],int n){
     return slargest;
 }
 
-//optimal approach
+//optimal approach tc- O(n) sp-O(1)
 int secondLargestEE(int arr[],int n){
     int slargest = -1;
     int max=arr[0];
