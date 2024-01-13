@@ -28,7 +28,7 @@ int main(){
     for(int i=0;i<n;i++){
         cout<<"Enter "<<i<<" Element ";
         cin>>array[i];
-    }
+    } 
     cout<<"Largest Element Using Max Variable: "<<LargestElement(array,n)<<endl;
     cout<<"Using Sorting Technique In Vector: ";
     vector<int> arr1 = {2,5,1,3,0};
