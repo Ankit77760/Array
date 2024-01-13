@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-//tc-O(n) sc-O(1)
+//tc-O(n) sc-O(1) 
 string isArraySorted(int arr[],int n){
     for(int i=1;i<n-1;i++){
         if(arr[i-1]<=arr[i]){
