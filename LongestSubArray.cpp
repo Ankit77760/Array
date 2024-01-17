@@ -66,7 +66,7 @@ int longestSubarrayWithSumK(vector<int> a, long long k) {
     return maxlen;
 }
 
-//tc-O(N) sp-O(1)
+//tc-O(2N) sp-O(1)
 int longestSubarrayWithSumKk(vector<int>&a,int k){
     int n=a.size();
     int sum=a[0];
