@@ -86,6 +86,7 @@ int longestSubarrayWithSumKk(vector<int>&a,int k){
             sum=sum+a[right];
         }
     }
+    cout<<maxlen;
 }
 
 int main()
@@ -95,6 +96,6 @@ int main()
     cout << LongestSubarray(vt, 3) << endl;
 
     cout << LongestSubarrayy(vt, 3) << endl;
-    cout << longestSubarrayWithSumK(vt, 3);
+    longestSubarrayWithSumKk(vt, 3);
     return 0;
 }
