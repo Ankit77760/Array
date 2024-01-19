@@ -24,27 +24,31 @@ int RearrangeElement(int arr[],int n){
     }
 }
 
-int RearrangeElementt(int arr[],int n){
-    int posIndex=0;
-    int negIndex=1;
-    for(int i=0;i<n;i++){
-        if(arr[i]>0){
-            arr[posIndex]=arr[i];
-            posIndex++;
+vector<int> rearrangeArray(vector<int>& nums) {
+        int n=nums.size();
+        vector<int>ans(n,0);
+        int posIndex=0;
+        int negIndex=1;
+
+        for(int i=0;i<n;i++){
+            if(nums[i]<0){
+                ans[negIndex]=nums[i];
+                negIndex += 2;
+            }
+            else{
+                ans[posIndex]=nums[i];
+                posIndex+=2;
+            }
         }
-        else{
-            arr[negIndex]=arr[i];
-            negIndex--;
-        }
+
+    for(auto &it:ans){
+        cout<<it<<" ";
     }
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" "; 
-    }
+    return ans;
 }
 
 int main(){
-    int n=6;
-    int arr[n]={1,2,-1,-2,4,-3};
+    vector<int>arr = {1,2,-1,-2,4,-3};
+    rearrangeArray(arr);
 
-    RearrangeElementt(arr,6);
 }
