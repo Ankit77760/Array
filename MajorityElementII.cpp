@@ -53,11 +53,11 @@ int MajorityElementtt(int arr[],int n){
     int el2;
     for(int i=0;i<n;i++){
         if(cnt1==0 && arr[i]!=el2){
-            cnt1++;
+            cnt1=1;
             el1=arr[i];
         }
         else if(cnt2==0 && arr[i]!=el1){
-            cnt2++;
+            cnt2=1;
             el2=arr[i];
         }
         else if(el1==arr[i]){
